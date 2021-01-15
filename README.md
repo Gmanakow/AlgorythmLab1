@@ -1,0 +1,2 @@
+# AlgorythmLab1
+паоци 
