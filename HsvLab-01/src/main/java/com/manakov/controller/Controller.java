@@ -45,6 +45,11 @@ public class Controller {
         System.out.println("change");
     }
 
+    public void applyEffect(int i){
+        model.applyEffect(i);
+        System.out.println("apply effect + " + i);
+    }
+
     public void showHistogram(){
         model.fillHistogramData();
     }

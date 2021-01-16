@@ -33,4 +33,8 @@ public class ImageDate {
         Color color = new Color(rgb.red, rgb.green, rgb.blue);
         this.image.setRGB(x,y, color.getRGB());
     }
+
+    public void setImage(BufferedImage image){
+        this.image = image;
+    }
 }

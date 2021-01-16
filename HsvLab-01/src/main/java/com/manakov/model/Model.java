@@ -5,7 +5,11 @@ import com.manakov.model.colorModel.LAB;
 import com.manakov.model.colorModel.RGB;
 import com.manakov.model.converters.RGB_HSV_Converter;
 import com.manakov.model.converters.RGB_To_LAB_Converter;
+import com.manakov.model.effects.AnEffect;
+import com.manakov.model.effects.GrayScaleEffect;
+import com.manakov.model.effects.Sobel;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.concurrent.SubmissionPublisher;
 
@@ -90,6 +94,34 @@ public class Model extends SubmissionPublisher<ImageDate> {
         }
     }
 
+    public void applyEffect(int type){
+        switch (type) {
+            case (0) : //sobel
+                imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
+                imageDate.setImage(apply(imageDate.getImage(), new Sobel(20)));
+                this.change();
+                break;
+        }
+    }
+
+    public BufferedImage apply(BufferedImage source, AnEffect anEffect){
+        BufferedImage result = new BufferedImage(source.getWidth(), source.getHeight(), BufferedImage.TYPE_INT_RGB);
+        for (int y = 0; y < source.getHeight(); y++) {
+            for (int x = 0; x < source.getWidth(); x++) {
+
+                int[] channels = anEffect.applyFilter(source, x, y);
+
+                for (int i = 0; i < 3; i++) {
+                    if (channels[i] > 255) channels[i] = 255;
+                    if (channels[i] < 0) channels[i] = 0;
+                }
+
+                int argb = new Color(channels[0], channels[1], channels[2]).getRGB();
+                result.setRGB(x, y, argb);
+            }
+        }
+        return result;
+    }
 
 
 }

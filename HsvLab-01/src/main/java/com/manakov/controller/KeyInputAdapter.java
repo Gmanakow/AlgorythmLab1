@@ -22,6 +22,9 @@ public class KeyInputAdapter extends KeyAdapter {
             case (KeyEvent.VK_H) :
                 controller.showHistogram();
                 break;
+            case (KeyEvent.VK_S) :
+                controller.applyEffect(0);
+                break;
         }
     }
 }
