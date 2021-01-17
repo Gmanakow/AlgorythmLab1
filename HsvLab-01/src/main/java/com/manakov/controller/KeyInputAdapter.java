@@ -1,5 +1,7 @@
 package com.manakov.controller;
 
+import com.manakov.model.effects.Canny.OtsuEffect;
+
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
@@ -28,6 +30,18 @@ public class KeyInputAdapter extends KeyAdapter {
             case (KeyEvent.VK_G) :
                 controller.applyEffect(1);
                 break;
+            case (KeyEvent.VK_C) :
+                controller.applyEffect(2);
+                break;
+
+            case (KeyEvent.VK_Z) : // Gauss
+                controller.applyEffect(3);
+                break;
+
+            case (KeyEvent.VK_O) :
+                controller.applyEffect(4);
+                break;
+
         }
     }
 }

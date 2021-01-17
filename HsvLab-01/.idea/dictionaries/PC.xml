@@ -2,7 +2,11 @@
   <dictionary name="PC">
     <words>
       <w>gabor</w>
+      <w>kanny</w>
+      <w>otsu</w>
       <w>sobel</w>
+      <w>threshhold</w>
+      <w>сanny</w>
     </words>
   </dictionary>
 </component>

@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 
 public class ImageDate {
     private BufferedImage image;
+    public int[][] direction = null;
+    public int[][] value = null;
 
     public ImageDate(BufferedImage image){
         this.image = image;
@@ -36,5 +38,10 @@ public class ImageDate {
 
     public void setImage(BufferedImage image){
         this.image = image;
+    }
+
+    public void setUnMax(int width, int height){
+        this.direction = new int[width][height];
+        this.value = new int[width][height];
     }
 }

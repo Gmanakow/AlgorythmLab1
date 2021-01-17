@@ -5,10 +5,10 @@ import com.manakov.model.colorModel.LAB;
 import com.manakov.model.colorModel.RGB;
 import com.manakov.model.converters.RGB_HSV_Converter;
 import com.manakov.model.converters.RGB_To_LAB_Converter;
-import com.manakov.model.effects.AnEffect;
-import com.manakov.model.effects.GaborEffect;
-import com.manakov.model.effects.GrayScaleEffect;
-import com.manakov.model.effects.SobelFilter;
+import com.manakov.model.effects.*;
+import com.manakov.model.effects.Canny.OtsuEffect;
+import com.manakov.model.effects.Canny.SmoothingEffect;
+import com.manakov.model.effects.Canny.UnMaxEffect;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -99,13 +99,35 @@ public class Model extends SubmissionPublisher<ImageDate> {
         switch (type) {
             case (0) : //sobel
                 imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
-                imageDate.setImage(apply(imageDate.getImage(), new SobelFilter(20)));
+                imageDate.setUnMax(imageDate.getWidth(), imageDate.getHeight());
+                imageDate.setImage(apply(imageDate.getImage(), new SobelFilter(20, imageDate)));
                 this.change();
                 break;
 
             case (1) : // Gabor
                 imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
                 imageDate.setImage(apply(imageDate.getImage(), new GaborEffect()));
+                this.change();
+                break;
+
+            case (2) : // Сanny
+                imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
+                imageDate.setImage(apply(imageDate.getImage(), new GaussEffect()));
+                imageDate.setUnMax(imageDate.getWidth(), imageDate.getHeight());
+                imageDate.setImage(apply(imageDate.getImage(), new SobelFilter(10, imageDate)));
+                imageDate.setImage(apply(imageDate.getImage(), new UnMaxEffect(imageDate)));
+                this.change();
+                break;
+
+            case (3) : // Gauss
+                imageDate.setImage(apply(imageDate.getImage(), new GaussEffect()));
+                this.change();
+                break;
+
+            case (4) : // OTSU
+                imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
+//                new OtsuEffect(imageDate.getImage());
+                imageDate.setImage(apply(imageDate.getImage(), new OtsuEffect(imageDate.getImage())));
                 this.change();
                 break;
         }
@@ -117,6 +139,7 @@ public class Model extends SubmissionPublisher<ImageDate> {
             for (int x = 0; x < source.getWidth(); x++) {
 
                 int[] channels = anEffect.applyFilter(source, x, y);
+                if (channels == null) continue;
 
                 for (int i = 0; i < 3; i++) {
                     if (channels[i] > 255) channels[i] = 255;
