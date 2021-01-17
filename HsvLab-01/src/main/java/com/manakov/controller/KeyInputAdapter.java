@@ -25,6 +25,9 @@ public class KeyInputAdapter extends KeyAdapter {
             case (KeyEvent.VK_S) :
                 controller.applyEffect(0);
                 break;
+            case (KeyEvent.VK_G) :
+                controller.applyEffect(1);
+                break;
         }
     }
 }

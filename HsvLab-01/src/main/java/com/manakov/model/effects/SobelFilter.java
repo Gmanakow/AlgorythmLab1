@@ -3,7 +3,7 @@ package com.manakov.model.effects;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class Sobel extends MatrixEffect {
+public class SobelFilter extends MatrixEffect {
 
     private int border;
 
@@ -15,7 +15,7 @@ public class Sobel extends MatrixEffect {
             {-2,  0,  2},
             {-1,  0,  1}};
 
-    public Sobel(int border) {
+    public SobelFilter(int border) {
         this.border = border;
     }
 

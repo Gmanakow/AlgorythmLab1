@@ -6,8 +6,9 @@ import com.manakov.model.colorModel.RGB;
 import com.manakov.model.converters.RGB_HSV_Converter;
 import com.manakov.model.converters.RGB_To_LAB_Converter;
 import com.manakov.model.effects.AnEffect;
+import com.manakov.model.effects.GaborEffect;
 import com.manakov.model.effects.GrayScaleEffect;
-import com.manakov.model.effects.Sobel;
+import com.manakov.model.effects.SobelFilter;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -98,7 +99,13 @@ public class Model extends SubmissionPublisher<ImageDate> {
         switch (type) {
             case (0) : //sobel
                 imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
-                imageDate.setImage(apply(imageDate.getImage(), new Sobel(20)));
+                imageDate.setImage(apply(imageDate.getImage(), new SobelFilter(20)));
+                this.change();
+                break;
+
+            case (1) : // Gabor
+                imageDate.setImage(apply(imageDate.getImage(), new GrayScaleEffect()));
+                imageDate.setImage(apply(imageDate.getImage(), new GaborEffect()));
                 this.change();
                 break;
         }

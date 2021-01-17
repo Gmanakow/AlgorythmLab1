@@ -16,6 +16,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,6 +27,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1hZltjg9m80L3Ywz6zHfmomjuEp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/учеба/графика/2/Filters" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
@@ -68,11 +72,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="250" width="810" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1610830172687">
+    <state x="734" y="250" width="810" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1610866738179">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="734" y="250" key="#com.intellij.ide.util.MemberChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1609923201141" />
-    <state x="734" y="250" width="810" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1610830172687" />
+    <state x="734" y="250" width="810" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1610866738179" />
     <state x="557" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610453974985">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -85,26 +89,42 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="709" y="298" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1610827409459" />
-    <state width="1815" height="175" key="GridCell.Tab.0.bottom" timestamp="1610832858679">
+    <state width="1815" height="260" key="GridCell.Tab.0.bottom" timestamp="1610892589621">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1814" height="209" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1609944571565" />
-    <state width="1815" height="175" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1610832858679" />
-    <state width="1815" height="175" key="GridCell.Tab.0.center" timestamp="1610832858679">
+    <state width="1815" height="260" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1610892589621" />
+    <state width="1815" height="260" key="GridCell.Tab.0.center" timestamp="1610892589621">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1814" height="209" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1609944571565" />
-    <state width="1815" height="175" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1610832858679" />
-    <state width="1815" height="175" key="GridCell.Tab.0.left" timestamp="1610832858679">
+    <state width="1815" height="260" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1610892589621" />
+    <state width="1815" height="260" key="GridCell.Tab.0.left" timestamp="1610892589621">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1814" height="209" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1609944571565" />
-    <state width="1815" height="175" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1610832858679" />
-    <state width="1815" height="175" key="GridCell.Tab.0.right" timestamp="1610832858679">
+    <state width="1815" height="260" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1610892589621" />
+    <state width="1815" height="260" key="GridCell.Tab.0.right" timestamp="1610892589621">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1814" height="209" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1609944571565" />
-    <state width="1815" height="175" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1610832858679" />
+    <state width="1815" height="260" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1610892589621" />
+    <state width="1815" height="319" key="GridCell.Tab.1.bottom" timestamp="1610891873192">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="319" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1610891873192" />
+    <state width="1815" height="319" key="GridCell.Tab.1.center" timestamp="1610891873192">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="319" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1610891873192" />
+    <state width="1815" height="319" key="GridCell.Tab.1.left" timestamp="1610891873192">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="319" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1610891873192" />
+    <state width="1815" height="319" key="GridCell.Tab.1.right" timestamp="1610891873192">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="319" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1610891873192" />
     <state x="459" y="198" key="Maven.ArtifactSearchDialog" timestamp="1610828321538">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -113,6 +133,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="637" y="368" width="579" height="343" key="com.intellij.ide.util.TipDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1605168864525" />
+    <state x="735" y="233" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610866733368">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="735" y="233" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1610866733368" />
     <state x="311" y="245" key="new project wizard" timestamp="1605178064846">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -121,9 +145,9 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="585" y="250" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1610455325820" />
-    <state x="592" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603897136693">
+    <state x="592" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1610881601486">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="592" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1603897136693" />
+    <state x="592" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1610881601486" />
   </component>
 </project>
